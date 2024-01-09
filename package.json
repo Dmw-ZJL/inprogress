@@ -30,7 +30,7 @@
     "start": "craco start",
     "build": "craco build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b master",
+    "deploy": "gh-pages -d build -b display-page",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
