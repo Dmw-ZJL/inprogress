@@ -24,7 +24,7 @@ const MyLayout: React.FC = () => {
       {
         key: "blog",
         icon: <StarOutlined />,
-        label: "博客",
+        label: "我的博客",
       },
       {
         key: "formily",
