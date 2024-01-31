@@ -1,11 +1,20 @@
 import React from 'react';
-import Layout from '@/Layout'
+import { BrowserRouter as Router, Routes,Route, RouteObject } from 'react-router-dom';
+import router from './router';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Layout />
+      <Router>
+        <Routes>
+          {router.routes.map((item: RouteObject) => {
+            return (
+              <Route path={item.path} key={item.path} element={item.element} />
+            )
+          })}
+        </Routes>
+      </Router>
     </div>
   );
 }
